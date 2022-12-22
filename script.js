@@ -31,8 +31,9 @@ function allowuser(user) {
                 "name": "International Business Machine"
             });
 
-            alert("Logged in user id :"+b)
-        window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+            alert("Logged in user id :"+b);
+            window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+            alert("Logged in user id :"+b);
         
     }
     else {
