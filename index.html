@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Login</title>
+
+        <!--External Style sheet-->
+        <link rel="stylesheet" href="style.css" >
+
+        <!--For responsive webpage-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Bootstrap link-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <div class="card m-5 p-5">
+                <div class="card-header text-center">
+                    Welcome to the Website!!
+                </div>
+                <div>
+                    <form class="p-5">
+                        <div class="form-group">
+                            <label for="user">Username </label>
+                            <input class="form-control" id="user" type="email" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password </label>
+                            <input class="form-control" id="password" type="password" placeholder="********">
+                        </div>
+                        <button class="btn btn-success" id="login" onclick="allowuser()">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--JS link-->
+        <script src="script.js"></script>
+    </body>
+
+
+
+</html>
