@@ -22,7 +22,8 @@ function allowuser(user) {
             {
                 //User Fields
                 "id": id, // Required for logged in app users
-                "email": a
+                "email": a,
+                "userrole": "Admin"
             
             },
             {
