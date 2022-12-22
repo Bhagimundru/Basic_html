@@ -7,21 +7,20 @@
 
 
 
-function allowuser() {
+function allowuser(user) {
     let a= document.getElementById("user").value;
-    if (a==="bhagimundru@gmail.com" || a==="demouser@gmail.com"){
-        //window.location="https://bhagimundru.github.io/Basic_html/Home.html";
-        window.open("Home.html");
-        
+    if (a=="bhagimundru@gmail.com" || a=="demouser@gmail.com"){
+        alert("Valid User");
+        window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
     }
     else{
         alert("Please enter a valid username");
     }
     }
 
-document.getElementById("buttonOne").onclick=function(){
-    ClickbuttonOne()
-};
+// document.getElementById("buttonOne").onclick=function(){
+//     ClickbuttonOne()
+// };
 function ClickbuttonOne(){
     //alert("hello from button one");
     document.getElementById("extrainfoOne").style.display="block";
