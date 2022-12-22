@@ -1,7 +1,8 @@
 function allowuser() {
-    var a= document.getElementById("user").value;
+    let a= document.getElementById("user").value;
     if (a==="bhagimundru@gmail.com" || a==="demouser@gmail.com"){
-        window.location="https://bhagimundru.github.io/Basic_html/Home.html";
+        //window.location="https://bhagimundru.github.io/Basic_html/Home.html";
+        window.open("Home.html");
         
     }
     else{
