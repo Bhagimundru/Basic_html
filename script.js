@@ -11,10 +11,12 @@
 
 function allowuser(user) {
     let a = document.getElementById("user").value;
-    var b = a.substr(8, 5);
-            var id = b;
+    var b;
     if (a == "bhagimundru@gmail.com" || a == "demouser@gmail.com") {
         alert("Valid User");
+        b= a.substr(8,5);
+        var id = b;
+
         //passing user and account objects:
         aptrinsic("identify",
             {
@@ -28,12 +30,15 @@ function allowuser(user) {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
+
+            alert("Logged in user id :"+b)
         window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
-        alert("Valid User");
+        
     }
     else {
         alert("Please enter a valid username");
     }
+    return b;
 }
 
 // document.getElementById("buttonOne").onclick=function(){
