@@ -12,6 +12,7 @@ function allowuser(user) {
     if (a=="bhagimundru@gmail.com" || a=="demouser@gmail.com"){
         alert("Valid User");
         window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+        alert("Valid User");
     }
     else{
         alert("Please enter a valid username");
