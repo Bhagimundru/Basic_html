@@ -23,7 +23,9 @@
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <script>
         $( function() {
-            $( ".draggable" ).draggable();
+            $( ".draggable" ).draggable(
+              { stop : function r() {aptrinsic('track','dragColor',{"name":"red drag"});}}
+            );
         } );
         </script>
     </head>
