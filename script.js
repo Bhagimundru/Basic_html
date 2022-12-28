@@ -42,15 +42,11 @@ function allowuser(user) {
     }
     return b;
 }
-
-// document.getElementById("buttonOne").onclick=function(){
-//     ClickbuttonOne()
-// };
 function ClickbuttonOne() {
     //alert("hello from button one");
     document.getElementById("extrainfoOne").style.display = "block";
     document.getElementById("buttonOne").style.display = "none";
-} 2
+}
 
 function SubcategoryDropdown() {
     if (document.getElementById("Issue category").value == "JO") {
@@ -69,8 +65,4 @@ function SubcategoryDropdown() {
         document.getElementById("Cockpit").style.display = "block";
     }
 
-}
-
-function ButtonDropdown() {
-    document.getElementById("Dropdown").classList.toggle("show");
 }
