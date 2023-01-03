@@ -33,7 +33,8 @@ function allowuser(user) {
             });
 
             alert("Logged in user id :"+b);
-            window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+            //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
+            window.location = "Home.html";
             alert("Logged in user id :"+b);
         
     }
