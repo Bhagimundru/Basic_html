@@ -188,7 +188,7 @@ function allowlogin(user) {
 
             alert("Logged in user id :" + b);
 
-            window.location = "https://bhagimundru.github.io/Basic_html/Index.html";
+            window.location = "https://bhagimundru.github.io/Basic_html/Query.html";
             aptrinsic('track', 'User Login');
 
         } else
