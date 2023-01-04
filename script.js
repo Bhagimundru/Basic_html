@@ -178,13 +178,13 @@ function allowuser(user) {
 
             // Full story
             // This is an example script - don't forget to change it!
-            FS.identify(id, {
-                displayName: a,
-                email: a
+            //FS.identify(id, {
+              //  displayName: a,
+                //email: a
                 // TODO: Add your own custom user variables here, details at
                 // https://help.fullstory.com/hc/en-us/articles/360020623294-FS-setUserVars-Recording-custom-user-data
 
-            });
+          //  });
 
             alert("Logged in user id :" + b);
 
