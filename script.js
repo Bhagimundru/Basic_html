@@ -9,7 +9,7 @@
 
 
 
-function allowlogin(user) {
+function allowuser(user) {
     //var a = document.form.usermail.value;
     var a = document.getElementById("user").value;
     var b;
