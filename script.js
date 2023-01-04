@@ -34,7 +34,7 @@ function allowuser(user) {
 
             alert("Logged in user id :"+b);
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
-            window.location = "Home.html";
+            window.location = "Index.html";
             //aptrinsic('track', 'User Login');
             alert("Logged in user id :"+b);
         
