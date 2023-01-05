@@ -23,8 +23,18 @@
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
         <script>
         $( function() {
-            $( ".draggable" ).draggable(
+            $( "#red-draggable").draggable(
               { stop : function r() {aptrinsic('track','dragColor',{"name":"red drag"});}}
+            );
+        } );
+        $( function(){
+          $( "#green-draggable").draggable(
+              { stop : function r() {aptrinsic('track','dragColor',{"name":"green drag"});}}
+            );
+        } );
+        $( function(){
+          $( "#blue-draggable").draggable(
+              { stop : function r() {aptrinsic('track','dragColor',{"name":"blue drag"});}}
             );
         } );
         </script>
@@ -51,13 +61,13 @@
                   </li>
               </ul>
         </nav>
-        <div class="ui-widget-content draggable bg-danger">
+        <div class="ui-widget-content bg-danger" id="red-draggable">
             <p>Drag me around</p>
           </div>
-        <div class="ui-widget-content draggable bg-info">
+        <div class="ui-widget-content bg-info" id="green-draggable">
             <p>Drag me around</p>
         </div>
-        <div class="ui-widget-content draggable bg-primary">
+        <div class="ui-widget-content bg-primary" id="blue-draggable">
             <p>Drag me around</p>
         </div>
         <!--JS link-->
