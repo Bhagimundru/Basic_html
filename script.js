@@ -259,3 +259,6 @@ function SubcategoryDropdown() {
     }
 
 }
+function SendData(){
+    aptrinsic('track', 'QueryDetails', {"name":document.getElementById("name").value});
+}
