@@ -8,7 +8,7 @@
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-JKAKZLOR3QV4-2");
 
 
-function allowuser(user) {
+function allowuser() {
     let a = document.getElementById("user").value;
     var b;
     if (a == "bhagimundru@gmail.com" || a == "demouser@gmail.com") {
