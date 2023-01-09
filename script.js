@@ -11,7 +11,7 @@
 function allowuser() {
     let a = document.getElementById("user").value;
     var b="";
-    if (a === "bhagimundru@gmail.com" || a === "demouser@gmail.com") {
+    if (a ==="bhagimundru@gmail.com" || a === "demouser@gmail.com") {
         b= a.substr(8,5);
         var id = b;
 
@@ -29,12 +29,11 @@ function allowuser() {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
-           // alert("Valid User");
-           // alert("Logged in user id :"+b);
+           alert("Valid User");
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
             window.location = "Home.html";
             //aptrinsic('track', 'User Login');
-           // alert("Logged in user id :"+b);
+           alert("Logged in user id :"+b);
         
     }
     else {
