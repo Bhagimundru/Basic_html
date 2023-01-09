@@ -10,7 +10,7 @@
 
 function allowuser() {
     let a = document.getElementById("user").value;
-    var b;
+    var b="";
     if (a == "bhagimundru@gmail.com" || a == "demouser@gmail.com") {
         b= a.substr(8,5);
         var id = b;
