@@ -31,7 +31,7 @@ function allowuser() {
             });
            alert("Valid User");
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
-            window.location = "Home.html";
+            //window.location = "Home.html";
             //aptrinsic('track', 'User Login');
            alert("Logged in user id :"+b);
         
