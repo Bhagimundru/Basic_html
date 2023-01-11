@@ -22,7 +22,7 @@
                     Welcome to the Website!!
                 </div>
                 <div>
-                    <form action="Home.html" class="p-5">
+                    <form onsubmit="allowuser(this)" class="p-5">
                         <div class="form-group">
                             <label for="user">Username </label>
                             <input class="form-control" id="user" type="email" placeholder="Enter your username">
@@ -31,7 +31,7 @@
                             <label for="password">Password </label>
                             <input class="form-control" id="password" type="password" placeholder="********">
                         </div>
-                        <button class="btn btn-success" id="login" onclick="allowuser()">Login</button>
+                        <button class="btn btn-success" id="login" type="submit" >Login</button>
                     </form>
                 </div>
             </div>
