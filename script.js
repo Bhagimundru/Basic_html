@@ -73,5 +73,5 @@ function SendData(){
 }
 
 function OnHomePage(){
-    aptrinsic('track','HomePageTrack')
+    aptrinsic('track','HomePageTrack');
 }
