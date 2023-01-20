@@ -145,5 +145,5 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
   function Paynow(){
     alert("Transaction of "+document.getElementById("amount").value+"is"+document.getElementById("PaymentStatus").value);
     document.getElementById("TextDisplay").textContent = "Transaction of "+document.getElementById("amount").value+"is"+document.getElementById("PaymentStatus").value;
-    aptrinsic('track','Transaction',{'Amount':document.getElementById("amount").value,'Status':document.getElementById("PaymentStatus").value});
+    aptrinsic('track','Transaction',{'AmountTransferred':document.getElementById("amount").value,'Status':document.getElementById("PaymentStatus").value});
   }
