@@ -141,3 +141,8 @@ function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
       return realPushState.apply(window.history, arguments); // Call the original
     };
   })();
+
+  function Paynow(){
+    document.getElementById("TextDisplay").textContent = "Transaction of "+document.getElementById("amount").value+"is"+document.getElementById("PaymentStatus").value;
+    aptrinsic('track','Transaction',{'Amount':document.getElementById("amount").value,'Status':'document.getElementById("PaymentStatus").value'});
+  }
