@@ -82,7 +82,7 @@ function OnHomePage(){
     aptrinsic('track','HomePageTrack');
 }
 
-/*function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
+function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
     this.pageName = null;
     this.startTime = null;
     this.maxSecondsTracked = maxSecondsTracked || 3600 * 24;
@@ -140,7 +140,7 @@ function OnHomePage(){
       featureTimer.startTimer(newLocation.href);
       return realPushState.apply(window.history, arguments); // Call the original
     };
-  })();*/
+  })();
 
   function Paynow(){
     alert("Transaction of "+document.getElementById("amount").value+"is"+document.getElementById("PaymentStatus").value);
