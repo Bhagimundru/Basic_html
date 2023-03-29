@@ -79,10 +79,10 @@ function SubcategoryDropdown() {
 
 }
 function SendData(){
-  console.log(document.cookie)
+  //console.log(document.cookie)
   if(document.cookie.includes("apt.uid")){
     var cookiepresent = true;
-    console.log(cookiepresent)
+    //console.log(cookiepresent)
   }
   else{
     var cookiepresent = false;
