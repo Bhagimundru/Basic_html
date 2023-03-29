@@ -85,7 +85,7 @@ function SendData(){
   else{
     var cookiepresent = false;
   }
-    aptrinsic('track', 'QueryDetails', {"name":document.getElementById("name").value,"cookiepresent":cookiepresent});
+    aptrinsic('track', 'Cookie', {"name":document.getElementById("name").value,"cookiepresent":cookiepresent});
 }
 
 function OnHomePage(){
