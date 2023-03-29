@@ -79,7 +79,13 @@ function SubcategoryDropdown() {
 
 }
 function SendData(){
-    aptrinsic('track', 'QueryDetails', {"name":document.getElementById("name").value});
+  if("apt.uid" in document.cookie){
+    var cookiepresent = true;
+  }
+  else{
+    var cookiepresent = false;
+  }
+    aptrinsic('track', 'QueryDetails', {"name":document.getElementById("name").value,"cookiepresent":cookiepresent});
 }
 
 function OnHomePage(){
