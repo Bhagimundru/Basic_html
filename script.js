@@ -39,6 +39,7 @@ function allowuser(form) {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
+            globalcontext();
            alert("Valid User");
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
             //window.location = "Home.html";
@@ -51,6 +52,12 @@ function allowuser(form) {
         alert("Please enter a valid username");
     }
     return b;
+}
+
+function globalcontext(){
+  if(document.getElementById("user").value=="demouser@gmail.com"){
+  aptrinsic('set', 'globalContext', {"version":12345, "plan":"Salesforce", "type":"Iframe"});
+  }
 }
 
 function ClickbuttonOne() {
