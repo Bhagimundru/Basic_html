@@ -60,6 +60,13 @@ function globalcontext(){
   }
 }
 
+//clearing cookies
+function deleteAllCookies() {
+  console.log("deleting cookies...");
+  aptrinsic('reset');
+  // counter = 0;
+}
+
 function ClickbuttonOne() {
     alert("hello from button one");
     document.getElementById("extrainfoOne").style.display = "block";
