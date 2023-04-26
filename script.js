@@ -39,7 +39,6 @@ function allowuser(form) {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
-            globalcontext();
            alert("Valid User");
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
             //window.location = "Home.html";
