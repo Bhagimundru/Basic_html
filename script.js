@@ -176,3 +176,8 @@ function OnHomePage(){
       title: "The Name of the Wind"
     });*/
   }
+
+  function SetAttribute(){
+    aptrinsic('set', 'user', {'firstName' : 'Elle', 'lastName' : 'Carol', 'role': 'Software Engineer'});
+    aptrinsic('track', 'SetAttribute', {'FirstName' : 'Elle', 'LastName' : 'Carol', 'Role': 'Software Engineer'});
+  }
