@@ -55,8 +55,7 @@ function allowuser(form) {
 
 function globalcontext(){
   if(document.getElementById("user").value=="demouser@gmail.com"){
-  aptrinsic('set', 'globalContext', {"version":12345, "plan":"Salesforce", "type":"Iframe"});
-  }
+  aptrinsic('set', 'globalContext', {"version":12345, "plan":"Salesforce", "type":"Iframe"});}
 }
 
 //clearing cookies
