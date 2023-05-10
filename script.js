@@ -49,6 +49,7 @@ function allowuser(form) {
         var id = b;
 
         //passing user and account objects:
+        if(aptrinsic.init != undefined){
         aptrinsic("identify",
             {
                 //User Fields
@@ -62,6 +63,7 @@ function allowuser(form) {
                 "id": "GSID-1234", //Required
                 "name": "International Business Machine"
             });
+          }
             globalcontext();
            alert("Valid User");
             //window.location = "https://bhagimundru.github.io/Basic_html/Home.html";
