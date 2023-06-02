@@ -99,6 +99,7 @@ function ClickbuttonOne() {
 }
 
 function SubcategoryDropdown() {
+  aptrinsic('track', 'Dropdownselected', {"valuechoosen":document.getElementById("Issue category").value});
     if (document.getElementById("Issue category").value == "JO") {
         document.getElementById("JO").style.display = "block";
         document.getElementById("Rules").style.display = "none";
