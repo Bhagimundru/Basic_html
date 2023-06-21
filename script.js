@@ -47,14 +47,13 @@ function allowuser(form) {
         b= a.substr(8,5);
         var id = b;
         //const emaillist= emailliststore.slice();
-        const emaillist=getTasks().slice();
+        const emaillist=getEmails().slice();
         //passing user and account objects:
         if(aptrinsic.init != undefined){
           if(!emaillist.includes(a)){
             emaillist.push(a);
-            storeTaskinLocalStorage(a);
+            storeEmailinLocalStorage(a);
           }
-          getTasks();
           var EmailAppend= emaillist.toString()
         aptrinsic("identify",
             {
@@ -88,25 +87,25 @@ function allowuser(form) {
     }
     return b;
 }
-function storeTaskinLocalStorage(task) {
-  let tasks;
-  if (localStorage.getItem('tasks') === null) {
-      tasks = [];
+function storeEmailinLocalStorage(Email) {
+  let emails;
+  if (localStorage.getItem('emails') === null) {
+    emails = [];
   } else {
-      tasks = JSON.parse(localStorage.getItem('tasks'));
+    emails = JSON.parse(localStorage.getItem('emails'));
   }
-  tasks.push(task);
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  emails.push(Email);
+  localStorage.setItem('emails', JSON.stringify(emails));
 }
 
-function getTasks() {
-  let tasks;
-  if (localStorage.getItem('tasks') === null) {
-      tasks = [];
+function getEmails() {
+  let emails;
+  if (localStorage.getItem('emails') === null) {
+      emails = [];
   } else {
-      tasks = JSON.parse(localStorage.getItem('tasks'));
+      emails = JSON.parse(localStorage.getItem('emails'));
   }
-  return tasks;
+  return emails;
 }
 
 function globalcontext(){
