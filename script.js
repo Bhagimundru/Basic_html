@@ -76,6 +76,7 @@ function allowuser(form) {
             form.action = "Home.html";
            alert("Logged in user id :"+b);
            emailliststore = emaillist.slice();
+           return emailliststore
 
         
     }
