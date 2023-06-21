@@ -49,8 +49,8 @@ function allowuser(form) {
         const emaillist=[];
         //passing user and account objects:
         if(aptrinsic.init != undefined){
-          if(!emaillist.includes("a")){
-            fruits.push("a");
+          if(!emaillist.includes(a)){
+            fruits.push(a);
           }
           var EmailAppend= emaillist.toString()
         aptrinsic("identify",
