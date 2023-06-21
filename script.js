@@ -46,7 +46,8 @@ function allowuser(form) {
     if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com") {
         b= a.substr(8,5);
         var id = b;
-        const emaillist= emailliststore.slice();
+        //const emaillist= emailliststore.slice();
+        const emaillist=[];
         //passing user and account objects:
         if(aptrinsic.init != undefined){
           if(!emaillist.includes(a)){
@@ -75,8 +76,8 @@ function allowuser(form) {
             //aptrinsic('track', 'User Login');
             form.action = "Home.html";
            alert("Logged in user id :"+b);
-           emailliststore = emaillist.slice();
-           return emailliststore
+           //emailliststore = emaillist.slice();
+           //return emailliststore
 
         
     }
