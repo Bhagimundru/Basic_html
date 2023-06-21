@@ -43,16 +43,18 @@ window['_fs_namespace'] = 'FS';
 function allowuser(form) {
     let a = document.getElementById("user").value;
     var b="";
-    if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com") {
+    if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com"||a==="demouser1@gmail.com") {
         b= a.substr(8,5);
         var id = b;
         //const emaillist= emailliststore.slice();
-        const emaillist=[];
+        const emaillist=getTasks().slice();
         //passing user and account objects:
         if(aptrinsic.init != undefined){
           if(!emaillist.includes(a)){
             emaillist.push(a);
+            storeTaskinLocalStorage(a);
           }
+          getTasks();
           var EmailAppend= emaillist.toString()
         aptrinsic("identify",
             {
@@ -85,6 +87,26 @@ function allowuser(form) {
         alert("Please enter a valid username");
     }
     return b;
+}
+function storeTaskinLocalStorage(task) {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+      tasks = [];
+  } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  tasks.push(task);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function getTasks() {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+      tasks = [];
+  } else {
+      tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  return tasks;
 }
 
 function globalcontext(){
