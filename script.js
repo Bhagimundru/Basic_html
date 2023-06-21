@@ -40,22 +40,26 @@ window['_fs_namespace'] = 'FS';
     g._v="1.3.0";
 })(window,document,window['_fs_namespace'],'script','user');*/
 
-
 function allowuser(form) {
     let a = document.getElementById("user").value;
     var b="";
-    if (a ==="bhagimundru@gmail.com" || a === "demouser@gmail.com") {
+    if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com") {
         b= a.substr(8,5);
         var id = b;
-
+        const emaillist=[];
         //passing user and account objects:
         if(aptrinsic.init != undefined){
+          if(!emaillist.includes("a")){
+            fruits.push("a");
+          }
+          var EmailAppend= emaillist.toString()
         aptrinsic("identify",
             {
                 //User Fields
-                "id": id, // Required for logged in app users
+                "id": "dru@g", // Required for logged in app users
                 "email": a,
-                "userrole": "Admin"
+                "userrole": "Admin",
+                "EmailAppend":EmailAppend
             
             },
             {
