@@ -236,3 +236,15 @@ function OnHomePage(){
     aptrinsic('set', 'user', {'firstName' : 'Elle', 'lastName' : 'Carol', 'role': 'Software Engineer'});
     aptrinsic('track', 'SetAttribute', {'FirstName' : 'Elle', 'LastName' : 'Carol', 'Role': 'Software Engineer'});
   }
+
+  function CallVisitorIdentify(){
+    aptrinsic("identify",
+            {
+                //User Fields
+                "id": "visitor", // Required for logged in app users
+            },
+            {
+                //Account Fields
+                "id": "Visitors"
+            });
+  }
