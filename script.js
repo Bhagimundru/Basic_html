@@ -43,7 +43,8 @@ window['_fs_namespace'] = 'FS';
 function allowuser(form) {
     let a = document.getElementById("user").value;
     var b="";
-    if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com"||a==="demouser1@gmail.com") {
+    //if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com"||a==="demouser1@gmail.com") {
+      if(a){
         b= a.substr(8,5);
         var id = b;
         //const emaillist= emailliststore.slice();
@@ -58,7 +59,7 @@ function allowuser(form) {
         aptrinsic("identify",
             {
                 //User Fields
-                "id": "dru@g", // Required for logged in app users
+                "id": b, // Required for logged in app users
                 "email": a,
                 "userrole": "Admin",
                 "EmailAppend":EmailAppend
@@ -247,4 +248,14 @@ function OnHomePage(){
                 //Account Fields
                 "id": "Visitors"
             });
+  }
+
+  function HomePageload(){
+    aptrinsic('set', 'user', {'URL' : 'Home'});
+  }
+  function AboutPageload(){
+    aptrinsic('set', 'user', {'URL' : 'About'});
+  }
+  function QueryPageload(){
+    aptrinsic('set', 'user', {'URL' : 'Query'}); 
   }
