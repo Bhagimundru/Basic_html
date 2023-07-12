@@ -45,7 +45,7 @@ function allowuser(form) {
     var b="";
     //if (a ==="bhagimundru@gmail.com" || a === "bhagi@gmail.com"||a==="demouser1@gmail.com") {
       if(a){
-        b= a.substr(8,5);
+        b= a.substr(0,5);
         var id = b;
         //const emaillist= emailliststore.slice();
         const emaillist=getEmails().slice();
