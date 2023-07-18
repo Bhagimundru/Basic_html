@@ -317,8 +317,8 @@ function storedropeventsinLocalStorage(dropElement) {
 function sendCountOfElements(){
   let elementarray= getdropElements();
   let count= elementarray.length;
-  console.log('Count of dropped Elements', count);
-  aptrinsic('track', 'onSave', {"count":count});
+  console.log('Count of dropped Elements', count,"Element1",getCount(elementarray,"Element 1"),"Element2",getCount(elementarray,"Element 2"),"Element3",getCount(elementarray,"Element 3"));
+  aptrinsic('track', 'onSave', {"count":count,"Element1":getCount(elementarray,"Element 1"),"Element2":getCount(elementarray,"Element 2"),"Element3":getCount(elementarray,"Element 3")});
 }
 
 function getdropElements() {
@@ -331,3 +331,13 @@ function getdropElements() {
   return dropElements;
 }
 
+function getCount(array,element) {
+  let count = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == element) {
+      count++;
+    }
+  }
+  return count;
+}
