@@ -259,3 +259,44 @@ function OnHomePage(){
   function QueryPageload(){
     aptrinsic('set', 'user', {'URL' : 'Query'}); 
   }
+
+
+
+// Drag
+
+function handleDrag(event) {
+  const draggedText = event.target.textContent;
+  event.dataTransfer.setData('text/plain', draggedText);
+  dragFunction(draggedText);
+}
+
+function dragFunction(draggedText) {
+  console.log('Dragged Element Text:', draggedText);
+  aptrinsic('track', 'Dropevent', {"draggedElement":draggedText});
+}
+
+//Drop
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function handleDrop(event) {
+  event.preventDefault();
+  const draggedText = event.dataTransfer.getData('text/plain');
+  appendDraggedElement(draggedText);
+}
+
+function appendDraggedElement(text) {
+  const draggedElement = document.createElement('div');
+  draggedElement.className = 'draggable';
+  draggedElement.textContent = text;
+  const dropTarget = document.getElementById('dropTarget');
+  dropTarget.appendChild(draggedElement);
+  dropFunction(text);
+}
+
+function dropFunction(draggedText) {
+  console.log('Dropped Element Text:', draggedText);
+  aptrinsic('track', 'Dropevent', {"dropedElement":draggedText});
+}

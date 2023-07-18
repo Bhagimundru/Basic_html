@@ -12,32 +12,6 @@
 
         <!--Bootstrap link-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-        <title>jQuery UI Draggable - Default functionality</title>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <style>
-        .draggable { width: 150px; height: 150px; padding: 0.5em; }
-        </style>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-        <script>
-        $( function() {
-            $( "#red-draggable").draggable(
-              { stop : function r() {aptrinsic('track','dragColor',{"name":"red drag"});}}
-            );
-        } );
-        $( function(){
-          $( "#green-draggable").draggable(
-              { stop : function r() {aptrinsic('track','dragColor',{"name":"green drag"});}}
-            );
-        } );
-        $( function(){
-          $( "#blue-draggable").draggable(
-              { stop : function r() {aptrinsic('track','dragColor',{"name":"blue drag"});}}
-            );
-        } );
-        </script>
     </head>
 
 
@@ -60,14 +34,24 @@
                   <a class="nav-link" href="Payment.html"> Payment</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="draganddrop.html"> D&D</a>
+                  </li>
+                <li class="nav-item">
                     <a class="nav-link" href="Login.html"> Log Out</a>
                   </li>
               </ul>
         </nav>
-        <div class="ui-widget-content bg-danger" id="red-draggable">Red</div>
-        <div class="ui-widget-content bg-info" id="green-draggable">Green </div>
-        <div class="ui-widget-content bg-primary" id="blue-draggable">Blue</div>
-        <!--JS link-->
+
+
+
+        <div class="draggable" draggable="true" ondragstart="handleDrag(event)">Element 1</div>
+        <div class="draggable" draggable="true" ondragstart="handleDrag(event)">Element 2</div>
+        <div class="draggable" draggable="true" ondragstart="handleDrag(event)">Element 3</div>
+
+        <div class="dropheading">Drop Target Below</div>
+        <div id="dropTarget" ondragover="allowDrop(event)" ondrop="handleDrop(event)">
+            
+          </div>
        
     </body>
 
