@@ -272,7 +272,7 @@ function handleDrag(event) {
 
 function dragFunction(draggedText) {
   console.log('Dragged Element Text:', draggedText);
-  aptrinsic('track', 'Dropevent', {"draggedElement":draggedText});
+  aptrinsic('track', 'Dragevent', {"draggedElement":draggedText});
 }
 
 //Drop
