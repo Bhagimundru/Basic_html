@@ -298,5 +298,36 @@ function appendDraggedElement(text) {
 
 function dropFunction(draggedText) {
   console.log('Dropped Element Text:', draggedText);
+  storedropeventsinLocalStorage(draggedText);
   aptrinsic('track', 'Dropevent', {"dropedElement":draggedText});
 }
+
+
+function storedropeventsinLocalStorage(dropElement) {
+  let dropElements;
+  if (localStorage.getItem('dropElements') === null) {
+    dropElements = [];
+  } else {
+    dropElements = JSON.parse(localStorage.getItem('dropElements'));
+  }
+  dropElements.push(dropElement);
+  localStorage.setItem('dropElements', JSON.stringify(dropElements));
+}
+
+function sendCountOfElements(){
+  let elementarray= getdropElements();
+  let count= elementarray.length;
+  console.log('Count of dropped Elements', count);
+  aptrinsic('track', 'onSave', {"count":count});
+}
+
+function getdropElements() {
+  let dropElements;
+  if (localStorage.getItem('dropElements') === null) {
+    dropElements = [];
+  } else {
+    dropElements = JSON.parse(localStorage.getItem('dropElements'));
+  }
+  return dropElements;
+}
+
