@@ -296,10 +296,10 @@ function appendDraggedElement(text) {
   dropFunction(text);
 }
 
-function dropFunction(draggedText) {
-  console.log('Dropped Element Text:', draggedText);
-  storedropeventsinLocalStorage(draggedText);
-  aptrinsic('track', 'Dropevent', {"dropedElement":draggedText});
+function dropFunction(dropText) {
+  console.log('Dropped Element Text:', dropText);
+  storedropeventsinLocalStorage(dropText);
+  aptrinsic('track', 'Dropevent', {"droppedElement":dropText});
 }
 
 
