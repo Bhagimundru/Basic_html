@@ -341,3 +341,18 @@ function getCount(array,element) {
   }
   return count;
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarPlaceholder = document.getElementById("navbar-placeholder");
+  const xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+          navbarPlaceholder.innerHTML = xhr.responseText;
+      }
+  };
+
+  xhr.open("GET", "navbar.html", true);
+  xhr.send();
+});
