@@ -342,6 +342,13 @@ function getCount(array,element) {
   return count;
 }
 
+function passglobalcontextfortest2(){
+  aptrinsic('set', 'globalContext', {"name":"DOWN1"});
+
+}
+function passglobalcontextfortest(){
+  aptrinsic('set', 'globalContext', {"name":"DOWN2"});
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   const navbarPlaceholder = document.getElementById("navbar-placeholder");
@@ -355,4 +362,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
   xhr.open("GET", "navbar.html", true);
   xhr.send();
+});
+//test
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollButton");
+  const targetElement = document.getElementById("test");
+
+  scrollButton.addEventListener("click", function () {
+      // Scroll smoothly to the target element
+      targetElement.scrollIntoView({ behavior: "smooth" });
+
+      // Add #test to the URL without causing a page reload
+      history.pushState({}, '', '#test');
+  });
+});
+//test2
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("scrollButton2");
+  const targetElement = document.getElementById("test2");
+
+  scrollButton.addEventListener("click", function () {
+      // Scroll smoothly to the target element
+      targetElement.scrollIntoView({ behavior: "smooth" });
+
+      // Add #test to the URL without causing a page reload
+      history.pushState({}, '', '#test2');
+  });
 });
