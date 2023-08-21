@@ -343,10 +343,12 @@ function getCount(array,element) {
 }
 
 function passglobalcontextfortest2(){
+  aptrinsic('remove', 'globalContext', ["name"])
   aptrinsic('set', 'globalContext', {"name":"DOWN1"});
 
 }
 function passglobalcontextfortest(){
+  aptrinsic('remove', 'globalContext', ["name"])
   aptrinsic('set', 'globalContext', {"name":"DOWN2"});
 }
 
