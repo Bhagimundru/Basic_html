@@ -111,7 +111,7 @@ function getEmails() {
 }
 
 function globalcontext(){
-  if(document.getElementById("user").value=="demouser@gmail.com"){
+  if(document.getElementById("user").value=="demouser@gmail.com" ||document.getElementById("user").value== "bhagimundru@gmail.com"){
   aptrinsic('set', 'globalContext', {"version":12345, "plan":"Salesforce", "type":"Iframe"});}
 }
 
