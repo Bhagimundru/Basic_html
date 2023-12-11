@@ -24,8 +24,9 @@ window.onerror = function(message, source, lineno, colno, error) {
     };
 
     // Send the error to the server
-    sendErrorToServer(errorObject);
-
+    console.log(errorObject);
+    aptrinsic('track', 'consoleError', {"name":errorObject.message});
+}
     // Prevent the default browser error handling
     return true;
 };
