@@ -264,8 +264,7 @@ function OnHomePage(){
                 //Account Fields
                 "id": "Visitors"
             });
-
-
+          }
   function HomePageload(){
     aptrinsic('set', 'user', {'URL' : 'Home'});
     /*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
