@@ -7,11 +7,11 @@
     var c = t.getElementsByTagName("script")[0]; c.parentNode.insertBefore(r, c)
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-JKAKZLOR3QV4-2");*/
 
-(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+/*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });*/
 
 window.onerror = function(message, source, lineno, colno, error) {
     // Construct an error object
@@ -268,14 +268,31 @@ function OnHomePage(){
 
   function HomePageload(){
     aptrinsic('set', 'user', {'URL' : 'Home'});
+    (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });
   }
   function AboutPageload(){
-    aptrinsic('set', 'user', {'URL' : 'About'});
+    //aptrinsic('set', 'user', {'URL' : 'About'});
+    
   }
   function QueryPageload(){
-    aptrinsic('set', 'user', {'URL' : 'Query'}); 
+    aptrinsic('set', 'user', {'URL' : 'Query'});
+    (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false }); 
   }
-
+  function LoginPageLoad(){
+    (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });
+  }
 
 
 // Drag
