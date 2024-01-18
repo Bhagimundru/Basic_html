@@ -254,7 +254,7 @@ function OnHomePage(){
     aptrinsic('track', 'SetAttribute', {'FirstName' : 'Elle', 'LastName' : 'Carol', 'Role': 'Software Engineer'});
   }
 
-  function CallVisitorIdentify(){
+  /*function CallVisitorIdentify(){
     aptrinsic("identify",
             {
                 //User Fields
@@ -264,10 +264,10 @@ function OnHomePage(){
                 //Account Fields
                 "id": "Visitors"
             });
-  }
+  }*/
 
   function HomePageload(){
-    aptrinsic('set', 'user', {'URL' : 'Home'});
+    //aptrinsic('set', 'user', {'URL' : 'Home'});
     (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
@@ -279,7 +279,7 @@ function OnHomePage(){
     
   }
   function QueryPageload(){
-    aptrinsic('set', 'user', {'URL' : 'Query'});
+    //aptrinsic('set', 'user', {'URL' : 'Query'});
     (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
