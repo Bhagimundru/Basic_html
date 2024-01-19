@@ -47,7 +47,7 @@
         <div class="container card">
             <div class="text-center">Submit your Query</div><hr>
             <form>
-                <div class="form-group">
+                <div class="form-group" unselectable="off">
                     <label for="name">Name</label><br>
                     <input class="form-control" formcontrolname="Name" type="text" id="name" placeholder="Enter Name" >
                 </div>
@@ -55,9 +55,9 @@
                     <label for="Employee ID">Employee Id</label><br>
                     <input class="form-control" formcontrolname="strokewidth" type="number" id="Employee ID" placeholder="Enter ID" >
                 </div>
-                <div class="form-group">
+                <div class="form-group" unselectable="on">
                     <label for="Email">Email</label><br>
-                    <input class="form-control" type="email" id="Email" placeholder="Enter a valid Mail ID" >
+                    <input class="form-control" type="email" id="Email" placeholder="Enter a valid Mail ID">
                 </div>
                 <div class="form-group">
                     <input type="radio" name="Veriticallength" formcontrolname="showVerticalLength" value="Show when selected">
@@ -129,7 +129,7 @@
                         <option value="CTA administration">CTA administration</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group" unselectable="on">
                     <label for="notes">More Notes</label><br>
                     <textarea id="notes" type="text" placeholder="Tell us more about the issue"></textarea>
                 </div>
