@@ -267,7 +267,7 @@ function OnHomePage(){
           }
   function HomePageload(){
     aptrinsic('set', 'user', {'URL' : 'Home'});
-    aptrinsic('kcb', 'hide');
+    //aptrinsic('kcb', 'hide');
     /*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
@@ -275,8 +275,8 @@ function OnHomePage(){
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });*/
   }
   function AboutPageload(){
-    //aptrinsic('set', 'user', {'URL' : 'About'});
-    
+    aptrinsic('set', 'user', {'URL' : 'About'});
+    aptrinsic('kcb', 'hide');
   }
   function QueryPageload(){
     aptrinsic('set', 'user', {'URL' : 'Query'});
