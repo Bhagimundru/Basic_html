@@ -267,6 +267,7 @@ function OnHomePage(){
           }
   function HomePageload(){
     aptrinsic('set', 'user', {'URL' : 'Home'});
+    aptrinsic('kcb', 'hide');
     /*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
@@ -384,7 +385,7 @@ function passglobalcontextfortest(){
   aptrinsic('set', 'globalContext', {"name":"DOWN2"});
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   const navbarPlaceholder = document.getElementById("navbar-placeholder");
   const xhr = new XMLHttpRequest();
 
@@ -423,4 +424,4 @@ document.addEventListener("DOMContentLoaded", function () {
       // Add #test to the URL without causing a page reload
       history.pushState({}, '', '#test2');
   });
-});
+});*/
