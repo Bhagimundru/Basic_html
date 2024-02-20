@@ -7,15 +7,15 @@
     var c = t.getElementsByTagName("script")[0]; c.parentNode.insertBefore(r, c)
 })(window, document, "https://web-sdk.aptrinsic.com/api/aptrinsic.js", "AP-JKAKZLOR3QV4-2");*/
 
-/*(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });*/
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2",{ "iframeModeEnabled": false });
 
 
 
-  !function(){"use strict";var sdkBaseUrl="https://cdn.rudderlabs.com/v3";var sdkName="rsa.min.js";var asyncScript=true
+ /* !function(){"use strict";var sdkBaseUrl="https://cdn.rudderlabs.com/v3";var sdkName="rsa.min.js";var asyncScript=true
   ;window.rudderAnalyticsBuildType="legacy",window.rudderanalytics=[]
   ;var e=["setDefaultInstanceKey","load","ready","page","track","identify","alias","group","reset","setAnonymousId","startSession","endSession"]
   ;for(var t=0;t<e.length;t++){var n=e[t];window.rudderanalytics[n]=function(e){return function(){
@@ -30,7 +30,7 @@
   },"undefined"==typeof Promise||"undefined"==typeof globalThis){var d=document.createElement("script")
   ;d.src="https://polyfill.io/v3/polyfill.min.js?features=Symbol%2CPromise&callback=rudderAnalyticsMount",
   d.async=asyncScript,document.head?document.head.appendChild(d):document.body.appendChild(d)}else{
-  window.rudderAnalyticsMount()}window.rudderanalytics.load("2ccVMmO8Xszt55NFFD0Bx8fNBXb","https://gainsightagfyq.dataplane.rudderstack.com",{})}();    
+  window.rudderAnalyticsMount()}window.rudderanalytics.load("2ccVMmO8Xszt55NFFD0Bx8fNBXb","https://gainsightagfyq.dataplane.rudderstack.com",{})}();    */
 
 
 window.onerror = function(message, source, lineno, colno, error) {
