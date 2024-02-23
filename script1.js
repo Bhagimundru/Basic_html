@@ -4,7 +4,7 @@
   var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
   var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-MTUFRPVCOSHV-2-2",{
-    "engagementChecksumFileUrl": "Engagement_checksum_Onestop_Stage.json"
+    //"engagementChecksumFileUrl": "Engagement_checksum_Onestop_Stage.json"
 });
 
 
