@@ -43,3 +43,21 @@ h1{
     display: grid;
   place-items: center;
 }
+
+/* styles.css */
+.tile {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    float: left;
+  }
+  
+  .tile button {
+    margin-bottom: 10px;
+  }
+  
+  .task-options {
+    display: none;
+  }
+  

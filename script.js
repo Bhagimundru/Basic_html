@@ -448,3 +448,54 @@ document.addEventListener("DOMContentLoaded", function () {
       history.pushState({}, '', '#test2');
   });
 });*/
+
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  displayTasks();
+});
+
+function showTaskOptions(tileId) {
+  var taskOptions = document.getElementById(tileId + "TaskOptions");
+  taskOptions.style.display = "block";
+  aptrinsic('set', 'globalContext', {"project":tileId });
+}
+
+function addTask(tileId, taskType) {
+  var taskOptions = document.getElementById(tileId + "TaskOptions");
+  taskOptions.style.display = "none";
+  
+  var taskDetails = taskType + " task is created in " + capitalizeFirstLetter(tileId);
+  var taskList = document.getElementById(tileId + "Tasks");
+  taskList.innerHTML += "<p>" + taskDetails + "</p>";
+  
+  saveTask(tileId, taskDetails);
+  aptrinsic('track', 'TaskCreated', {"Project":capitalizeFirstLetter(tileId),"Type":taskType}); 
+}
+
+function displayTasks() {
+  var tiles = ["marketing", "hr", "support"];
+  
+  tiles.forEach(function(tileId) {
+    var tasks = getTasks(tileId);
+    var taskList = document.getElementById(tileId + "Tasks");
+    tasks.forEach(function(task) {
+      taskList.innerHTML += "<p>" + task + "</p>";
+    });
+  });
+}
+
+function saveTask(tileId, taskDetails) {
+  var tasks = getTasks(tileId);
+  tasks.push(taskDetails);
+  localStorage.setItem(tileId + "Tasks", JSON.stringify(tasks));
+}
+
+function getTasks(tileId) {
+  var tasks = localStorage.getItem(tileId + "Tasks");
+  return tasks ? JSON.parse(tasks) : [];
+}
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
