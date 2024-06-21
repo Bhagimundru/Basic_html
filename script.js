@@ -200,6 +200,7 @@ function SendData(){
 
 function OnHomePage(){
     aptrinsic('track','HomePageTrack');
+    aptrinsic('set', 'globalContext', {"project":"home"});
 }
 
 /*function PXPageTimer(maxSecondsTracked, trackPagesOverMax) {
@@ -299,7 +300,8 @@ function OnHomePage(){
   }
   function AboutPageload(){
     aptrinsic('set', 'user', {'URL' : 'About'});
-    aptrinsic('kcb', 'hide');
+    aptrinsic('set', 'globalContext', {"project":"about"});
+
   }
   function QueryPageload(){
     aptrinsic('set', 'user', {'URL' : 'Query'});
